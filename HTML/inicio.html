@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBALE - Domina un Nuevo Idioma</title>
+
+    <!-- Enlaces a las hojas de estilo -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/loader.css">
+
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==================== PANTALLA DE CARGA (LOADER) ==================== -->
+    <div id="loader">
+        <img src="../MEDIOS/GLOBALE LOGO 02.PNG" alt="Logo completo de GLOBALE" class="loader__logo">
+    </div>
+
+    <!-- ==================== HEADER (CÓDIGO PEGADO DIRECTAMENTE) ==================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="inicio.html" class="nav__logo">
+                <img src="../MEDIOS/GLOBALE LOGO SOLO.png" alt="Logo de GLOBALE" class="nav__logo-img">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="inicio.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="quienes-somos.html" class="nav__link">Quiénes Somos</a></li>
+                    <li class="nav__item"><a href="metodologia.html" class="nav__link">Metodología</a></li>
+                    <li class="nav__item dropdown">
+                        <a href="lenguas.html" class="nav__link">Lenguas <i
+                                class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="IDIOMAS/ingles.html" class="dropdown__link">Inglés</a></li>
+                            <li><a href="IDIOMAS/frances.html" class="dropdown__link">Francés</a></li>
+                            <li><a href="IDIOMAS/aleman.html" class="dropdown__link">Alemán</a></li>
+                            <li><a href="IDIOMAS/italiano.html" class="dropdown__link">Italiano</a></li>
+                            <li><a href="IDIOMAS/portugues.html" class="dropdown__link">Portugués</a></li>
+                            <li><a href="IDIOMAS/chino-mandarin.html" class="dropdown__link">Chino Mandarín</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="niveles-certificacion.html" class="nav__link">Niveles</a></li>
+                    <li class="nav__item"><a href="convenios.html" class="nav__link">Convenios</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__link nav__link--button">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- ==================== SECCIÓN HERO ==================== -->
+        <section class="hero-section">
+            <div class="hero-section__bg"></div>
+            <div class="hero-section__container container">
+                <h1 class="hero-section__title">Abre tu mundo. Domina un nuevo idioma.</h1>
+                <p class="hero-section__subtitle">Conecta con nuevas culturas y alcanza tus metas profesionales con
+                    nuestra metodología flexible y profesores nativos.</p>
+                <a href="lenguas.html" class="btn btn--accent">Explora nuestros idiomas</a>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN POR QUÉ GLOBALE ==================== -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">La Excelencia es Nuestro Idioma Común</h2>
+                <div class="why-globale__grid">
+                    <!-- Beneficio 1 -->
+                    <div class="benefit-card">
+                        <i class="fas fa-graduation-cap benefit-card__icon"></i>
+                        <h3 class="benefit-card__title">Profesores Nativos y Certificados</h3>
+                        <p class="benefit-card__text">No solo aprenderás un idioma, lo vivirás. Nuestro equipo está
+                            formado exclusivamente por profesores nativos y titulados, seleccionados por su experiencia
+                            y, sobre todo, por su pasión por enseñar.</p>
+                    </div>
+                    <!-- Beneficio 2 -->
+                    <div class="benefit-card">
+                        <i class="far fa-calendar-alt benefit-card__icon"></i>
+                        <h3 class="benefit-card__title">Metodología Flexible y Personalizada</h3>
+                        <p class="benefit-card__text">Diseñamos un camino de aprendizaje a tu medida, combinando
+                            tecnología de vanguardia con un seguimiento personalizado para que avances a tu propio ritmo
+                            y logres tus metas.</p>
+                    </div>
+                    <!-- Beneficio 3 -->
+                    <div class="benefit-card">
+                        <i class="fas fa-globe-americas benefit-card__icon"></i>
+                        <h3 class="benefit-card__title">Comunidad Internacional</h3>
+                        <p class="benefit-card__text">Formarás parte de una comunidad vibrante. Participa en nuestros
+                            clubs de conversación y talleres culturales donde podrás practicar en un ambiente relajado y
+                            hacer amigos de todo el mundo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN NÚMEROS (STATS) ==================== -->
+        <section class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Una Comunidad Global que no para de Crecer</h2>
+                <div class="stats__grid">
+                    <!-- Stat 1 -->
+                    <div class="stat-card">
+                        <i class="fas fa-user-graduate stat-card__icon"></i>
+                        <span class="stat-card__number" data-target="500">0</span>
+                        <p class="stat-card__text">Estudiantes Satisfechos</p>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div class="stat-card">
+                        <i class="fas fa-chalkboard-teacher stat-card__icon"></i>
+                        <span class="stat-card__number" data-target="30">0</span>
+                        <p class="stat-card__text">Profesores Nativos Expertos</p>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div class="stat-card">
+                        <i class="fas fa-language stat-card__icon"></i>
+                        <span class="stat-card__number" data-target="6">0</span>
+                        <p class="stat-card__text">Idiomas para Conquistar el Mundo</p>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle stat-card__icon"></i>
+                        <span class="stat-card__number" data-target="95">0</span>
+                        <p class="stat-card__text">% de Éxito en Exámenes Oficiales</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN IDIOMAS ==================== -->
+        <section class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Elige Tu Próxima Aventura Lingüística</h2>
+                <div class="languages__grid">
+                    <!-- Tarjeta de Idioma -->
+                    <a href="IDIOMAS/ingles.html" class="language-card">
+                        <img src="https://placehold.co/400x300/08415C/FFFFFF?text=Ingl%C3%A9s" alt="Clases de Inglés"
+                            class="language-card__img">
+                        <div class="language-card__overlay">
+                            <h3 class="language-card__title">Inglés</h3>
+                            <p class="language-card__description">El idioma universal para los negocios y los viajes.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="IDIOMAS/frances.html" class="language-card">
+                        <img src="https://placehold.co/400x300/08415C/FFFFFF?text=Franc%C3%A9s" alt="Clases de Francés"
+                            class="language-card__img">
+                        <div class="language-card__overlay">
+                            <h3 class="language-card__title">Francés</h3>
+                            <p class="language-card__description">La lengua de la diplomacia, la moda y la cultura.</p>
+                        </div>
+                    </a>
+                    <a href="IDIOMAS/aleman.html" class="language-card">
+                        <img src="https://placehold.co/400x300/08415C/FFFFFF?text=Alem%C3%A1n" alt="Clases de Alemán"
+                            class="language-card__img">
+                        <div class="language-card__overlay">
+                            <h3 class="language-card__title">Alemán</h3>
+                            <p class="language-card__description">La clave para la innovación y el mercado europeo.</p>
+                        </div>
+                    </a>
+                    <a href="IDIOMAS/italiano.html" class="language-card">
+                        <img src="https://placehold.co/400x300/08415C/FFFFFF?text=Italiano" alt="Clases de Italiano"
+                            class="language-card__img">
+                        <div class="language-card__overlay">
+                            <h3 class="language-card__title">Italiano</h3>
+                            <p class="language-card__description">Sumérgete en el arte, el diseño y un estilo de vida
+                                único.</p>
+                        </div>
+                    </a>
+                    <a href="IDIOMAS/portugues.html" class="language-card">
+                        <img src="https://placehold.co/400x300/08415C/FFFFFF?text=Portugu%C3%A9s"
+                            alt="Clases de Portugués" class="language-card__img">
+                        <div class="language-card__overlay">
+                            <h3 class="language-card__title">Portugués</h3>
+                            <p class="language-card__description">El puente hacia nuevos mercados en Europa y
+                                Latinoamérica.</p>
+                        </div>
+                    </a>
+                    <a href="IDIOMAS/chino-mandarin.html" class="language-card">
+                        <img src="https://placehold.co/400x300/08415C/FFFFFF?text=Chino" alt="Clases de Chino Mandarín"
+                            class="language-card__img">
+                        <div class="language-card__overlay">
+                            <h3 class="language-card__title">Chino Mandarín</h3>
+                            <p class="language-card__description">Una ventaja competitiva para los negocios del futuro.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN TESTIMONIOS ==================== -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Lo que dicen nuestros estudiantes</h2>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <img src="https://placehold.co/100x100/F1BF98/FFFFFF?text=LF" alt="Foto de Lucía Fernández"
+                            class="testimonial-card__img">
+                        <p class="testimonial-card__quote">"Gracias a GLOBALE, conseguí la confianza para liderar
+                            reuniones en alemán y mi carrera dio un salto increíble. La calidad de los profesores es
+                            excepcional."</p>
+                        <h4 class="testimonial-card__author">Lucía Fernández</h4>
+                        <span class="testimonial-card__detail">Alemán para Negocios - Nivel B2</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://placehold.co/100x100/F1BF98/FFFFFF?text=JM" alt="Foto de Javier Moreno"
+                            class="testimonial-card__img">
+                        <p class="testimonial-card__quote">"Siempre quise aprender italiano por mis raíces. En solo unos
+                            meses, ya puedo mantener conversaciones fluidas. ¡Las clases son muy dinámicas y
+                            divertidas!"</p>
+                        <h4 class="testimonial-card__author">Javier Moreno</h4>
+                        <span class="testimonial-card__detail">Italiano desde Cero - Nivel A2</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN BLOG ==================== -->
+        <section class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Explora Nuestros Recursos</h2>
+                <div class="blog-preview__grid">
+                    <div class="blog-card">
+                        <img src="https://placehold.co/400x250/08415C/FFFFFF?text=Blog" class="blog-card__img"
+                            alt="Imagen del artículo">
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">Las 5 series de Netflix que no sabías que eran perfectas para
+                                mejorar tu francés.</h3>
+                            <a href="blog.html" class="blog-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="https://placehold.co/400x250/08415C/FFFFFF?text=Blog" class="blog-card__img"
+                            alt="Imagen del artículo">
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">Errores comunes que debes evitar en tu entrevista de trabajo en
+                                inglés.</h3>
+                            <a href="blog.html" class="blog-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="https://placehold.co/400x250/08415C/FFFFFF?text=Blog" class="blog-card__img"
+                            alt="Imagen del artículo">
+                        <div class="blog-card__content">
+                            <h3 class="blog-card__title">¿Es realmente tan difícil aprender chino mandarín? Desmontamos
+                                los mitos.</h3>
+                            <a href="blog.html" class="blog-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN CTA FINAL ==================== -->
+        <section class="section cta-section">
+            <div class="container cta-section__container">
+                <h2 class="cta-section__title">¿Listo para empezar tu viaje?</h2>
+                <p class="cta-section__text">Da el primer paso hoy. Realiza nuestra prueba de nivel gratuita y sin
+                    compromiso o contáctanos para una asesoría personalizada.</p>
+                <div class="cta-section__buttons">
+                    <a href="prueba-de-nivel.html" class="btn btn--light">Hacer Prueba de Nivel</a>
+                    <a href="contacto.html" class="btn btn--accent">Contactar ahora</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">GLOBALE</h3>
+                <p class="footer__description">Conectando culturas, abriendo tu mundo a nuevas oportunidades a través de
+                    los idiomas.</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Navegación</h3>
+                <ul class="footer__links">
+                    <li><a href="quienes-somos.html" class="footer__link">Sobre Nosotros</a></li>
+                    <li><a href="metodologia.html" class="footer__link">Nuestro Método</a></li>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Idiomas</h3>
+                <ul class="footer__links">
+                    <li><a href="IDIOMAS/ingles.html" class="footer__link">Inglés</a></li>
+                    <li><a href="IDIOMAS/frances.html" class="footer__link">Francés</a></li>
+                    <li><a href="IDIOMAS/aleman.html" class="footer__link">Alemán</a></li>
+                    <li><a href="IDIOMAS/italiano.html" class="footer__link">Italiano</a></li>
+                    <li><a href="IDIOMAS/portugues.html" class="footer__link">Portugués</a></li>
+                    <li><a href="IDIOMAS/chino-mandarin.html" class="footer__link">Chino Mandarín</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Síguenos</h3>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2025 GLOBALE. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Llamada al script de JavaScript al final del body -->
+    <script src="../JS/Main.js"></script>
+    <script src="../JS/counter.js"></script>
+</body>
+
+</html>

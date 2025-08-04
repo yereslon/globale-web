@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Nivel - GLOBALE</title>
+    
+    <!-- Enlaces a las hojas de estilo -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- Crearemos un CSS nuevo para el test -->
+    <link rel="stylesheet" href="../CSS/test-nivel.css"> 
+
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER (CÓDIGO PEGADO DIRECTAMENTE) ==================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="inicio.html" class="nav__logo">
+                <img src="../MEDIOS/GLOBALE LOGO SOLO.png" alt="Logo de GLOBALE" class="nav__logo-img">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="inicio.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="quienes-somos.html" class="nav__link">Quiénes Somos</a></li>
+                    <li class="nav__item"><a href="metodologia.html" class="nav__link">Metodología</a></li>
+                    <li class="nav__item dropdown">
+                        <a href="lenguas.html" class="nav__link">Lenguas <i class="fas fa-chevron-down dropdown__icon"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="IDIOMAS/ingles.html" class="dropdown__link">Inglés</a></li>
+                            <li><a href="IDIOMAS/frances.html" class="dropdown__link">Francés</a></li>
+                            <li><a href="IDIOMAS/aleman.html" class="dropdown__link">Alemán</a></li>
+                            <li><a href="IDIOMAS/italiano.html" class="dropdown__link">Italiano</a></li>
+                            <li><a href="IDIOMAS/portugues.html" class="dropdown__link">Portugués</a></li>
+                            <li><a href="IDIOMAS/chino-mandarin.html" class="dropdown__link">Chino Mandarín</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="niveles-certificacion.html" class="nav__link">Niveles</a></li>
+                    <li class="nav__item"><a href="convenios.html" class="nav__link">Convenios</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item">
+                        <a href="contacto.html" class="nav__link nav__link--button">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- ==================== CONTENEDOR PRINCIPAL DEL TEST ==================== -->
+        <div class="test-container container">
+
+            <!-- PASO 1: PANTALLA DE BIENVENIDA (Visible al inicio) -->
+            <div id="pantalla-inicio-test">
+                <h1 class="test-title">Descubre tu Nivel de Idioma</h1>
+                <p class="test-description">
+                    Nuestra prueba de nivel está diseñada por expertos para darte una estimación precisa de tus habilidades.
+                    Te tomará entre 10 y 15 minutos. ¡Vamos a empezar!
+                </p>
+                <div class="test-intro-form">
+                    <label for="seleccion-idioma">Elige el idioma que quieres evaluar:</label>
+                    <select id="seleccion-idioma" class="test-select">
+                        <option value="ingles">Inglés</option>
+                        <option value="frances">Francés</option>
+                        <option value="aleman">Alemán</option>
+                        <option value="italiano">Italiano</option>
+                        <option value="portugues">Portugués</option>
+                        <option value="chino-mandarin">Chino Mandarín</option>
+                    </select>
+                    <button id="btn-empezar-test" class="btn btn--accent">Comenzar la Prueba</button>
+                </div>
+            </div>
+
+            <!-- PASO 2: PANTALLA DEL CUESTIONARIO (Oculta al inicio) -->
+            <div id="pantalla-cuestionario" class="hidden">
+                <div class="quiz-header">
+                    <div id="contador-pregunta">Pregunta 1 de 20</div>
+                    <div class="barra-progreso">
+                        <div id="relleno-barra-progreso"></div>
+                    </div>
+                </div>
+                <div class="quiz-body">
+                    <div id="contenedor-imagen-pregunta"></div>
+                    <h2 id="texto-pregunta">Aquí irá el texto de la pregunta...</h2>
+                    <div id="opciones-respuesta" class="answer-options">
+                        <!-- Las opciones de respuesta se generarán aquí con JavaScript -->
+                    </div>
+                </div>
+                <div class="quiz-footer">
+                    <button id="btn-siguiente-pregunta" class="btn">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- PASO 3: PANTALLA DE RESULTADOS (Oculta al inicio) -->
+            <div id="pantalla-resultado" class="hidden">
+                <h1 class="test-title">¡Felicidades! Tu nivel estimado es...</h1>
+                <div class="result-card">
+                    <h2 id="titulo-nivel-resultado">B1 - Intermedio</h2>
+                    <p id="descripcion-nivel-resultado">
+                        Puedes entender los puntos principales de textos claros y mantener una conversación sobre temas familiares. ¡Estás en el camino perfecto hacia la fluidez!
+                    </p>
+                </div>
+                <div class="next-steps">
+                    <h3>Tu Siguiente Paso en GLOBALE</h3>
+                    <a id="btn-ver-cursos" href="#" class="btn btn--accent">Ver Cursos para Nivel B1</a>
+                    <a id="btn-contactar-asesor" href="contacto.html" class="btn">Hablar con un Asesor</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ==================== FOOTER (CÓDIGO PEGADO DIRECTAMENTE) ==================== -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">GLOBALE</h3>
+                <p class="footer__description">Conectando culturas, abriendo tu mundo a nuevas oportunidades a través de los idiomas.</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Navegación</h3>
+                <ul class="footer__links">
+                    <li><a href="quienes-somos.html" class="footer__link">Sobre Nosotros</a></li>
+                    <li><a href="metodologia.html" class="footer__link">Nuestro Método</a></li>
+                    <li><a href="blog.html" class="footer__link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Idiomas</h3>
+                <ul class="footer__links">
+                    <li><a href="IDIOMAS/ingles.html" class="footer__link">Inglés</a></li>
+                    <li><a href="IDIOMAS/frances.html" class="footer__link">Francés</a></li>
+                    <li><a href="IDIOMAS/aleman.html" class="footer__link">Alemán</a></li>
+                    <li><a href="IDIOMAS/italiano.html" class="footer__link">Italiano</a></li>
+                    <li><a href="IDIOMAS/portugues.html" class="footer__link">Portugués</a></li>
+                    <li><a href="IDIOMAS/chino-mandarin.html" class="footer__link">Chino Mandarín</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Síguenos</h3>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2025 GLOBALE. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Llamada al script de JavaScript para el test -->
+    <script src="../JS/test-nivel.js"></script>
+</body>
+</html>

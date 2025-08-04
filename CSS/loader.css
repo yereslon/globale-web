@@ -1,0 +1,48 @@
+/* ==================== PANTALLA DE CARGA (LOADER) ==================== */
+
+/* Estilo para el body mientras el loader está activo para evitar el scroll */
+body.loading {
+    overflow: hidden;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: var(--color-texto); /* Usa el mismo color oscuro del header/footer */
+    z-index: 9999; /* Se asegura de que esté por encima de todo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease-in-out;
+}
+
+.loader__logo {
+    max-width: 80%;
+    width: 500px; /* Ajusta el tamaño del logo como prefieras */
+    opacity: 0; /* Empieza invisible */
+    transform: scale(0.9); /* Empieza un poco más pequeño */
+    /* Animación de aparición */
+    animation: fadeInLogo 1s ease-out 0.5s forwards;
+}
+
+/* Keyframes para la animación de aparición del logo */
+@keyframes fadeInLogo {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Clase que se añadirá con JS para ocultar el loader */
+#loader.hidden {
+    transform: translateY(-100%); /* Desliza el loader hacia arriba */
+}
+
+/* Clase que se añadirá con JS para hacer desaparecer el logo */
+.loader__logo.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}

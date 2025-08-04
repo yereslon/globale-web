@@ -1,0 +1,138 @@
+/* ==================== HEADER Y NAVEGACIÓN ==================== */
+.header {
+  width: 100%;
+  background-color: var(--color-texto); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav.container {
+    padding: 0 1rem;
+}
+
+.nav__logo-img {
+    height: 36px; 
+    width: auto;
+    display: block;
+}
+
+.nav__menu {
+  display: block;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav__link {
+  color: var(--color-fondo); 
+  font-weight: 600;
+  font-family: var(--fuente-titulos);
+  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.nav__link:hover {
+  color: var(--color-acento); 
+}
+
+.nav__link--button {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.nav__link--button:hover {
+    background-color: var(--color-acento-hover);
+    color: var(--color-blanco);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-blanco);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    list-style: none;
+    width: max-content;
+}
+
+.dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+.dropdown__link {
+    display: block;
+    color: var(--color-texto);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown__link:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+.nav__toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-blanco); 
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        background-color: var(--color-blanco);
+        padding: 4rem 2rem;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        transition: right 0.4s;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2rem;
+    }
+    
+    .nav__menu .nav__link {
+        color: var(--color-texto);
+    }
+    .nav__menu .nav__link:hover {
+        color: var(--color-primario);
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+}
